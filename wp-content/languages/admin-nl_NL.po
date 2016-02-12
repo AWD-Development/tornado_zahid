@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-02-03 09:27:28+0000\n"
+"PO-Revision-Date: 2016-02-09 15:18:32+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1477,10 +1477,6 @@ msgstr "Standaard editor"
 msgid "example: www.wordpress.org"
 msgstr "Bijvoorbeeld: www.wordpress.org"
 
-#: wp-admin/theme-install.php:77
-msgid "You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter."
-msgstr "Het is mogelijk om te zoeken naar thema's bij sleutelwoord, auteur of tags. Daarnaast kun je specifieker zoeken door de criteria te gebruiken in het filter."
-
 #: wp-admin/themes.php:78
 msgid "The search for installed themes will search for terms in their name, description, author, or tag."
 msgstr "Het zoeken naar geïnstalleerde thema's maakt gebruikt van termen in de naam, omschrijving, auteur of tags van de thema's."
@@ -1492,6 +1488,10 @@ msgstr "Aantal gevonden thema's: %d"
 #: wp-admin/theme-install.php:78
 msgid "Alternately, you can browse the themes that are Featured, Popular, or Latest. When you find a theme you like, you can preview it or install it."
 msgstr "Als alternatief kun je bladeren door de thema's via Uitgelicht, Populair of Laatste. Wanneer je een thema leuk vindt kun je het bekijken of installeren."
+
+#: wp-admin/theme-install.php:77
+msgid "You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter."
+msgstr "Het is mogelijk om te zoeken naar thema's op trefwoord, auteur of tag. Daarnaast kun je specifieker zoeken door de criteria te gebruiken in het filter."
 
 #: wp-admin/options-general.php:245
 msgid "enter a custom date format in the following field"
@@ -4202,7 +4202,7 @@ msgstr "Thema zoeken op basis van specifieke kenmerken."
 
 #: wp-admin/includes/theme-install.php:60
 msgid "Search for themes by keyword."
-msgstr "Zoeken naar thema's met sleutelwoorden."
+msgstr "Op trefwoord zoeken naar thema's."
 
 #: wp-admin/setup-config.php:172
 msgid "In all likelihood, these items were supplied to you by your Web Host. If you don&#8217;t have this information, then you will need to contact them before you can continue. If you&#8217;re all ready&hellip;"
@@ -4376,7 +4376,7 @@ msgstr "Link-URL"
 #: wp-admin/includes/plugin-install.php:267
 #: wp-admin/includes/theme-install.php:67
 msgid "Keyword"
-msgstr "Sleutelwoord"
+msgstr "Trefwoord"
 
 #. translators: 1: theme name, 2: version
 #: wp-admin/includes/class-wp-upgrader.php:1289
@@ -4572,10 +4572,6 @@ msgstr "MB"
 msgid "MB (Leave blank for network default)"
 msgstr "MB (Laat leeg voor de netwerk standaard)"
 
-#: wp-admin/includes/ms.php:655 wp-admin/includes/ms.php:657
-msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
-msgstr "Je probeert toegang te krijgen tot het \"%1$s\" dashboard, maar je hebt momenteel onvoldoende rechten op deze site. Als je denkt dat je toegang moet hebben op het \"%1$s\" dashboard, neem dan contact op met je netwerk admin."
-
 #: wp-admin/includes/ms.php:658
 msgid "If you reached this screen by accident and meant to visit one of your own sites, here are some shortcuts to help you find your way."
 msgstr "Als je per ongeluk op dit scherm terechtgekomen bent en je dacht &#233;&#233;n van je eigen sites te bezoeken, hier zijn enkele snelkoppelingen die je kunnen helpen de weg te vinden."
@@ -4702,6 +4698,10 @@ msgstr "Het lijkt erop dat er geen thema's beschikbaar zijn op dit moment."
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:498
 msgid "Visit theme homepage"
 msgstr "Thema-homepagina bezoeken"
+
+#: wp-admin/includes/ms.php:655 wp-admin/includes/ms.php:657
+msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
+msgstr "Je probeert toegang te krijgen tot het \"%1$s\" dashboard, maar je hebt momenteel onvoldoende rechten op deze site. Als je denkt dat je toegang moet hebben op het \"%1$s\" dashboard, neem dan contact op met je netwerkbeheerder."
 
 #: wp-admin/my-sites.php:31
 msgid "The primary site you chose does not exist."
@@ -5149,7 +5149,7 @@ msgstr "Thema's voor een multisite kunnen alleen via de Netwerk admin-sectie wor
 
 #: wp-admin/options-general.php:30
 msgid "If you want site visitors to be able to register themselves, as opposed to by the site administrator, check the membership box. A default user role can be set for all new users, whether self-registered or registered by the site admin."
-msgstr "Als je wilt dat de sitebezoekers zichzelf kunnen registreren, in tegenstelling tot geregistreerd worden door de site-admin, vink dan de gebruikersbox aan. Een standaard gebruikersrol kan ingesteld worden voor alle nieuwe gebruikers, zowel voor zelf-registreerders als geregistreerd door een site-admin."
+msgstr "Als je wilt dat de sitebezoekers zichzelf kunnen registreren, in tegenstelling tot geregistreerd worden door de sitebeheerder, vink dan de gebruikersbox aan. Een standaard gebruikersrol kan ingesteld worden voor alle nieuwe gebruikers, zowel voor zelf-registreerders als geregistreerd door een sitebeheerder."
 
 #: wp-admin/options-writing.php:29
 msgid "Post Via Email"
@@ -5179,10 +5179,6 @@ msgstr "Deze sidebar is niet langer beschikbaar en wordt nergens getoond op je s
 msgid "Removing and Reusing"
 msgstr "Verwijderen en opnieuw gebruiken"
 
-#: wp-admin/edit-tags.php:230
-msgid "You can assign keywords to your posts using <strong>tags</strong>. Unlike categories, tags have no hierarchy, meaning there&#8217;s no relationship from one tag to another."
-msgstr "Je kunt sleutelwoorden aan je berichten meegeven met gebruik van <strong>tags</strong>. Anders dan in categorie&#235;n hebben tags geen hi&#235;rarchie, dit betekent dat er geen relatie hoeft te zijn tussen de ene tag en de andere."
-
 #: wp-admin/widgets.php:66
 msgid "Missing Widgets"
 msgstr "Ontbrekende widgets"
@@ -5198,6 +5194,10 @@ msgstr "Je kunt groepen van links maken door gebruik te maken van Linkcategorie&
 #: wp-admin/media-new.php:50
 msgid "Clicking <strong>Select Files</strong> opens a navigation window showing you files in your operating system. Selecting <strong>Open</strong> after clicking on the file you want activates a progress bar on the uploader screen."
 msgstr "Klikken op <strong>Bestanden selecteren</strong> opent een navigatiescherm wat je bestanden van je computer toont. <strong>Open</strong> selecteren nadat je op het bestand geklikt hebt wat je wilt activeren, vervolgens wordt een voortgangsbalk op het uploadscherm getoond."
+
+#: wp-admin/edit-tags.php:230
+msgid "You can assign keywords to your posts using <strong>tags</strong>. Unlike categories, tags have no hierarchy, meaning there&#8217;s no relationship from one tag to another."
+msgstr "Je kunt trefwoorden aan je berichten meegeven met gebruik van <strong>tags</strong>. Anders dan in categorie&#235;n hebben tags geen hi&#235;rarchie, dit betekent dat er geen relatie hoeft te zijn tussen de ene tag en de andere."
 
 #: wp-admin/link-manager.php:53
 msgid "Deleting Links"
@@ -5289,7 +5289,7 @@ msgstr "<strong>Snel bewerken</strong> geeft toegang tot de metadata van je beri
 
 #: wp-admin/user-new.php:171
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
-msgstr "Omdat dit een multisite installatie is, kun je accounts toevoegen die al bestaan op het netwerk door een gebruikersnaam of e-mail te specificeren en een rol toe te wijzen. Voor meer opties, zoals een wachtwoord instellen moet je een Netwerk Admin zijn en de hoverlink onder een bestaande gebruiksnaam klikken om het gebruikersprofiel te bewerken via Netwerk Admin -> Alle gebruikers."
+msgstr "Omdat dit een multisite installatie is, kun je accounts toevoegen die al bestaan op het netwerk door een gebruikersnaam of e-mail te specificeren en een rol toe te wijzen. Voor meer opties, zoals een wachtwoord instellen moet je een netwerkbeheerder zijn en de hoverlink onder een bestaande gebruiksnaam klikken om het gebruikersprofiel te bewerken via Netwerk Admin -> Alle gebruikers."
 
 #: wp-admin/includes/template.php:1977
 msgid "Likely direct inclusion of wp-admin/includes/template.php in order to use add_meta_box(). This is very wrong. Hook the add_meta_box() call into the add_meta_boxes action instead."
@@ -6052,13 +6052,13 @@ msgstr "De boxen op je dashboard zijn:"
 msgid "If you want to make changes but don&#8217;t want them to be overwritten when the plugin is updated, you may be ready to think about writing your own plugin. For information on how to edit plugins, write your own from scratch, or just better understand their anatomy, check out the links below."
 msgstr "Als je wijzigingen wilt maken, maar je wilt niet dat het overschreven wordt wanneer de plugin wordt bijgewerkt, kun je overwegen om een eigen plugin te schrijven. Voor informatie hoe je plugins kunt bewerken, een plugin kunt schrijven vanaf 0, of om de anatomie te begrijpen, klik op de onderstaande links."
 
-#: wp-admin/users.php:32
-msgid "This screen lists all the existing users for your site. Each user has one of five defined roles as set by the site admin: Site Administrator, Editor, Author, Contributor, or Subscriber. Users with roles other than Administrator will see fewer options in the dashboard navigation when they are logged in, based on their role."
-msgstr "Dit scherm geeft een overzicht van alle bestaande gebruikers voor deze site. Elke gebruiker heeft &#233;&#233;n van de vijf gedefinieerde taken zoals vastgesteld door de beheerder: Admin, redacteur, auteur, plaatser, of abonnee. Gebruikers met rollen anders dan beheerder zien minder mogelijkheden in de dashboard navigatie wanneer ze zijn ingelogd."
-
 #: wp-admin/tools.php:17
 msgid "Press This is a bookmarklet that makes it easy to blog about something you come across on the web. You can use it to just grab a link, or to post an excerpt. Press This will even allow you to choose from images included on the page and use them in your post. Just drag the Press This link on this screen to your bookmarks bar in your browser, and you&#8217;ll be on your way to easier content creation. Clicking on it while on another website opens a popup window with all these options."
 msgstr "&#39;Press This&#39; is een bookmarklet welke het eenvoudig maakt om iets te publiceren wat je op het web tegenkomt. Je kunt het gebruiken voor een link, of om een samenvatting te plaatsen. &#39;Press This&#39; laat je ook kiezen om afbeeldingen die zich op een pagina bevinden te gebruiken in je bericht. Sleep de &#39;Press This&#39; link op dit scherm naar je favorietenbalk in je browser en je bent op weg om op een eenvoudige manier content te maken. Je kunt deze opties gebruiken door erop te klikken terwijl een andere site in een popup venster opent."
+
+#: wp-admin/users.php:32
+msgid "This screen lists all the existing users for your site. Each user has one of five defined roles as set by the site admin: Site Administrator, Editor, Author, Contributor, or Subscriber. Users with roles other than Administrator will see fewer options in the dashboard navigation when they are logged in, based on their role."
+msgstr "Dit scherm geeft een overzicht van alle bestaande gebruikers voor deze site. Elke gebruiker heeft &#233;&#233;n van de vijf gedefinieerde taken zoals vastgesteld door de sitebeheerder: beheerder, redacteur, auteur, plaatser, of abonnee. Gebruikers met rollen anders dan beheerder zien minder mogelijkheden in de dashboard navigatie wanneer ze zijn ingelogd."
 
 #. translators: Default page slug
 #: wp-admin/includes/upgrade.php:235
