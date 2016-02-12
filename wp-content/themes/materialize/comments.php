@@ -21,7 +21,7 @@ if( comments_open() ){
 
         echo '<div class="mythemes-comments">';
         echo '<h3 class="comments-title">';
-        echo sprintf( _nx( 'Comment ( %s )' , 'Comments ( %s )' , $nr , 'Title before comment(s) list' , 'materialize' ) , '<strong>' . number_format_i18n( $nr ) . '</strong>' );
+        echo sprintf( _nx( 'Відгук ( %s )' , 'Comments ( %s )' , $nr , 'Title before comment(s) list' , 'materialize' ) , '<strong>' . number_format_i18n( $nr ) . '</strong>' );
         echo '</h3>';
 		
         echo '<ol>';
@@ -88,7 +88,7 @@ if( comments_open() ){
     
 
     $rett  = '<div class="textarea row-fluid"><p class="comment-form-comment textarea user-not-logged-in">';
-    $rett .= '<label for="comment">' . __( 'THE COMMENT BODY' , 'materialize' ) . '</label>';
+    $rett .= '<label for="comment">' . __( 'Текст відгуку' , 'materialize' ) . '</label>';
     $rett .= '<textarea id="comment" name="comment" cols="45" rows="10" class="materialize-textarea" aria-required="true"></textarea>';
     $rett .= '</p></div>';
 
@@ -113,13 +113,13 @@ if( comments_open() ){
     }
 
     $args = array(	
-        'title_reply' => __( "Leave a reply" , 'materialize' ),
+        'title_reply' => __( "Залиште свій відгук" , 'materialize' ),
         'comment_notes_after'   => '',
-        'comment_notes_before'  => '<button type="submit" class="btn waves-effect waves-light submit-comment">' . __( 'Comment' , 'materialize' ) . '</button><p class="comment-notes">' . __( 'Your email address will not be published.' , 'materialize' ) . '</p>',
-        'logged_in_as'          => '<button type="submit" class="btn waves-effect waves-light submit-comment">' . __( 'Comment' , 'materialize' ) . '</button><p class="logged-in-as">' . __( 'Logged in as' , 'materialize' ) . ' <a href="' . esc_url( home_url( '/wp-admin/profile.php' ) ) . '">' . get_the_author_meta( 'nickname' , get_current_user_id() ) . '</a>. <a href="' . wp_logout_url( get_permalink( $post -> ID ) ) .'" title="' . __( 'Log out of this account' , 'materialize' ) . '">' . __( 'Log out?' , 'materialize' ) . ' </a></p>',		
+        'comment_notes_before'  => '<button type="submit" class="btn waves-effect waves-light submit-comment">' . __( 'Відправити' , 'materialize' ) . '</button><p class="comment-notes">' . __( 'Your email address will not be published.' , 'materialize' ) . '</p>',
+        'logged_in_as'          => '<button type="submit" class="btn waves-effect waves-light submit-comment">' . __( 'Відправити' , 'materialize' ) . '</button><p class="logged-in-as">' . __( 'Ви ввійшли як' , 'materialize' ) . ' <a href="' . esc_url( home_url( '/wp-admin/profile.php' ) ) . '">' . get_the_author_meta( 'nickname' , get_current_user_id() ) . '</a>. <a href="' . wp_logout_url( get_permalink( $post -> ID ) ) .'" title="' . __( 'Log out of this account' , 'materialize' ) . '">' . __( 'Вийти?' , 'materialize' ) . ' </a></p>',
         'fields'                => apply_filters( 'comment_form_default_fields', $fields ),
         'comment_field'         => $rett,
-        'label_submit'          => __( 'Comment' , 'materialize' )
+        'label_submit'          => __( 'Відправити' , 'materialize' )
     );
 
     echo '<div class="mythemes-comments">';

@@ -21,9 +21,9 @@
 
     else if( $default ){
         echo '<div class="widget widget_text mythemes-default-content ' . esc_attr( $default_class ) . '">';
-        echo '<h3>' . __( 'Many Components' , 'materialize' ) . '</h3>';
+        echo '<h3>' . __( 'Філоксен' , 'materialize' ) . '</h3>';
         echo '<div class="textwidget">';
-        echo '<p>' . __( 'There are a lot of different components that will help you to make a perfect suit for startup project with theme Materialize.' , 'materialize' ) . '</p>';
+        echo '<p>' . __( '"Найсмачніше м\'ясо не схоже на мясо"' , 'materialize' ) . '</p>';
         echo '</div>';
         echo '</div>';
     }

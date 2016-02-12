@@ -99,7 +99,7 @@
 
                                 <!-- TITLE -->
                                 <h1 class="post-title"><?php the_title(); ?></h1>
-                          
+
                                 <!-- TOP META : AUTHOR / TIME / COMMENTS -->
                                 <?php get_template_part( 'templates/meta/top' ); ?>
 
@@ -112,7 +112,7 @@
                             </article>
 
                             <?php
-                                wp_link_pages( array( 
+                                wp_link_pages( array(
                                     'before'        => '<div class="mythemes-paged-post"><span class="mythemes-pagination-title">' . __( 'Pages', 'materialize' ) . ': </span>',
                                     'after'         => '<div class="clearfix"></div></div>',
                                     'link_before'   => '<span class="mythemes-pagination-item">',

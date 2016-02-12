@@ -21,9 +21,9 @@
 
     else if( $default ){
         echo '<div class="widget widget_text mythemes-default-content ' . esc_attr( $default_class ) . '">';
-        echo '<h3>' . __( 'Block Model' , 'materialize' ) . '</h3>';
+        echo '<h3>' . __( 'Кайкі Дейсю' , 'materialize' ) . '</h3>';
         echo '<div class="textwidget">';
-        echo '<p>' . __( 'With Materialize WordPress theme you can easily combine components in a variety ways for different design projects.' , 'materialize' ) . '</p>';
+        echo '<p>' . __( '"М\'ясо-все, що потрібно людині для щастя. Незалежно від того молода вона чи ні, в житті не буває без хвилювань. Але смачне м\'ясо може допомогти їх розвіяти."' , 'materialize' ) . '</p>';
         echo '</div>';
         echo '</div>';
     }

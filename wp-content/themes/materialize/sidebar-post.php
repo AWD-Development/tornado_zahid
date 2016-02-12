@@ -16,7 +16,7 @@
 
     /* SIDEBAR */
     if ( dynamic_sidebar( 'post' ) ){
-        /* IF NOT EMPTY */    
+        /* IF NOT EMPTY */
     }
 
     else if( $default ){
@@ -42,7 +42,7 @@
         echo '<li><a href="' . esc_url( get_day_link( $y , $m , $d ) ) . '">';
         echo '<time datetime="' . esc_attr( $dtime ) . '"><i class="icon-calendar"></i>' . esc_html( $ptime ) . '</time></a></li>';
         echo '<li><a href="' . esc_url( get_author_posts_url( $post -> post_author ) ) . '" title="' . sprintf( __( 'Writed by %s' , 'materialize' ), esc_attr( $name ) ) . '"><i class="icon-user-5"></i>' . esc_html( $name ) . '</a></li>';
-        
+
         if( $post -> comment_status == 'open' ) {
             $nr = get_comments_number( $post -> ID );
             echo '<li>';
@@ -101,7 +101,7 @@
                 echo esc_html( $tag -> name );
                 echo '</a>';
             }
-            
+
             echo '<div class="clearfix"></div>';
             echo '</div>';
             echo '</div>';

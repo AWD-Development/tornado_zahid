@@ -20,18 +20,18 @@
                 $u_time = get_post_time( esc_attr( get_option( 'date_format' ) ) );
             ?>
 
-            <time datetime="<?php echo esc_attr( $t_time ); ?>"><i class="icon-calendar"></i><?php echo sprintf( __( 'on %s' , 'materialize' ), $u_time, false, $post -> ID, true ); ?></time>
+            <time datetime="<?php echo esc_attr( $t_time ); ?>"><i class="icon-calendar"></i><?php echo sprintf( __( 'опубліковано %s' , 'materialize' ), $u_time, false, $post -> ID, true ); ?></time>
 
             <div class="clear"></div>
 
             <!-- GET FIRST 2 CATEGORIES -->
-            <?php the_category(); ?>
+<!--            --><?php //the_category(); ?>
 
             <!-- AUTHOR -->
-            <?php $name = get_the_author_meta( 'display_name' , $post -> post_author ); ?>
-            <a class="author waves-effect waves-dark grey lighten-4" href="<?php echo esc_url( get_author_posts_url( $post-> post_author ) ); ?>" title="<?php echo sprintf( __( 'Writed by %s' , 'materialize' ) , esc_attr( $name ) ); ?>">
-                <i class="icon-user-1"></i><?php echo sprintf( __( 'by %s' , 'materialize' ) , esc_html( $name ) ); ?>
-            </a>
+<!--            --><?php //$name = get_the_author_meta( 'display_name' , $post -> post_author ); ?>
+<!--            <a class="author waves-effect waves-dark grey lighten-4" href="--><?php //echo esc_url( get_author_posts_url( $post-> post_author ) ); ?><!--" title="--><?php //echo sprintf( __( 'Writed by %s' , 'materialize' ) , esc_attr( $name ) ); ?><!--">-->
+<!--                <i class="icon-user-1"></i>--><?php //echo sprintf( __( 'by %s' , 'materialize' ) , esc_html( $name ) ); ?>
+<!--            </a>-->
 
             <!-- COMMENTS -->
             <?php

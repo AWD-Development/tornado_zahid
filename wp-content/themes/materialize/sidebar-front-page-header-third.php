@@ -21,9 +21,9 @@
 
     else if( $default ){
         echo '<div class="widget widget_text mythemes-default-content ' . esc_attr( $default_class ) . '">';
-        echo '<h3>' . __( 'Responsive Layout' , 'materialize' ) . '</h3>';
+        echo '<h3>' . __( 'Сальвадор Далі' , 'materialize' ) . '</h3>';
         echo '<div class="textwidget">';
-        echo '<p>' . __( 'We haven\'t forgotten about responsive layout. With theme Materialize, you can create a website with full mobile support.' , 'materialize' ) . '</p>';
+        echo '<p>' . __( '"Все красиве має бути їстівне"' , 'materialize' ) . '</p>';
         echo '</div>';
         echo '</div>';
     }

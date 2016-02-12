@@ -16,7 +16,7 @@
 
 	/* SIDEBAR */
     if ( dynamic_sidebar( 'front-page' ) ){
-        /* IF NOT EMPTY */    
+        /* IF NOT EMPTY */
     }
 
     else if( $default ){
@@ -24,7 +24,7 @@
         echo '<div class="widget widget_search mythemes-default-content ' . esc_attr( $default_class ) . '">';
         get_template_part( 'searchform' );
         echo '</div>';
-        
+
         echo '<div class="widget widget_text mythemes-default-content ' . esc_attr( $default_class ) . '">';
         echo '<h4 class="widget-title">' . __( 'Default Content' , 'materialize' ) . '</h4>';
         echo '<div class="textwidget">';

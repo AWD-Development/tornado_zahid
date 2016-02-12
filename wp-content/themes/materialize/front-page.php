@@ -93,12 +93,12 @@
                                 	?>
 	                                    <div class="post-thumbnail">
 	                                    <?php
-	                                    	echo get_the_post_thumbnail( $post -> ID, 'full', array( 
+	                                    	echo get_the_post_thumbnail( $post -> ID, 'full', array(
 	                                    		'alt' 	=> mythemes_post::title( $post -> ID, true )
 	                                    	));
 
 	                                    	$c_thumbnail = !empty( $p_thumbnail -> post_excerpt ) ? esc_html( $p_thumbnail -> post_excerpt ) : null;
-	                                    
+
 	                                        if( !empty( $c_thumbnail ) ) {
 	                                    		?>
 		                                            <footer class="wp-caption">
@@ -117,7 +117,7 @@
                                 echo '<div class="clearfix"></div>';
 
                                 /* PAGE PAGINATION */
-                                wp_link_pages( array( 
+                                wp_link_pages( array(
                                     'before'        => '<div class="mythemes-paged-post"><span class="mythemes-pagination-title">' . __( 'Pages', 'materialize' ) . ': </span>',
                                     'after'         => '</div>',
                                     'link_before'   => '<span class="mythemes-pagination-item">',
